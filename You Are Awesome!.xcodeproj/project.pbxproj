@@ -12,8 +12,6 @@
 		8FC9166821E19BE500CBF7B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC9166621E19BE500CBF7B3 /* Main.storyboard */; };
 		8FC9166A21E19BE700CBF7B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FC9166921E19BE700CBF7B3 /* Assets.xcassets */; };
 		8FC9166D21E19BE700CBF7B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC9166B21E19BE700CBF7B3 /* LaunchScreen.storyboard */; };
-		8FC9167821E19BE700CBF7B3 /* You_Are_Awesome_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC9167721E19BE700CBF7B3 /* You_Are_Awesome_Tests.swift */; };
-		8FC9168321E19BE700CBF7B3 /* You_Are_Awesome_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC9168221E19BE700CBF7B3 /* You_Are_Awesome_UITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +40,7 @@
 		8FC9166C21E19BE700CBF7B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FC9166E21E19BE700CBF7B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FC9167321E19BE700CBF7B3 /* You Are Awesome!Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "You Are Awesome!Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FC9167721E19BE700CBF7B3 /* You_Are_Awesome_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = You_Are_Awesome_Tests.swift; sourceTree = "<group>"; };
-		8FC9167921E19BE700CBF7B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FC9167E21E19BE700CBF7B3 /* You Are Awesome!UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "You Are Awesome!UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FC9168221E19BE700CBF7B3 /* You_Are_Awesome_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = You_Are_Awesome_UITests.swift; sourceTree = "<group>"; };
-		8FC9168421E19BE700CBF7B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				8FC9166121E19BE500CBF7B3 /* You Are Awesome! */,
-				8FC9167621E19BE700CBF7B3 /* You Are Awesome!Tests */,
-				8FC9168121E19BE700CBF7B3 /* You Are Awesome!UITests */,
 				8FC9166021E19BE500CBF7B3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,24 +97,6 @@
 				8FC9166E21E19BE700CBF7B3 /* Info.plist */,
 			);
 			path = "You Are Awesome!";
-			sourceTree = "<group>";
-		};
-		8FC9167621E19BE700CBF7B3 /* You Are Awesome!Tests */ = {
-			isa = PBXGroup;
-			children = (
-				8FC9167721E19BE700CBF7B3 /* You_Are_Awesome_Tests.swift */,
-				8FC9167921E19BE700CBF7B3 /* Info.plist */,
-			);
-			path = "You Are Awesome!Tests";
-			sourceTree = "<group>";
-		};
-		8FC9168121E19BE700CBF7B3 /* You Are Awesome!UITests */ = {
-			isa = PBXGroup;
-			children = (
-				8FC9168221E19BE700CBF7B3 /* You_Are_Awesome_UITests.swift */,
-				8FC9168421E19BE700CBF7B3 /* Info.plist */,
-			);
-			path = "You Are Awesome!UITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +239,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FC9167821E19BE700CBF7B3 /* You_Are_Awesome_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FC9168321E19BE700CBF7B3 /* You_Are_Awesome_UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
