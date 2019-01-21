@@ -45,8 +45,6 @@ class ViewController: UIViewController {
 //        } else {messageLabel.text = messages[0]
 //
 //        }
-        
-
         let message1 = "You are Awesome!"
         let message2 = "You are Great!"
         let message3 = "You are Amazing!"
