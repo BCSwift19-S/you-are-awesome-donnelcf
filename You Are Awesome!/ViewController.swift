@@ -22,11 +22,11 @@ class ViewController: UIViewController {
 
     }
     //linked button to code
-    @IBAction func showAnotherMessage(_ sender: UIButton) {
-        messageLabel.text = "You are Great!"
-    }
+//    @IBAction func showAnotherMessage(_ sender: UIButton) {
+//        messageLabel.text = "You are Great!"
+//    }
     @IBAction func showMessagePressed(_ sender: UIButton) {
-        messageLabel.text = "You are Amazing!"
+//        messageLabel.text = "You are Amazing!"
         
 //        let messages = ["You are Fantastic!!", "You are Great!", "You are Amazing"]
 //
@@ -47,17 +47,17 @@ class ViewController: UIViewController {
 //        }
         
 
-//        let message1 = "You are Awesome!"
-//        let message2 = "You are Great!"
-//        let message3 = "You are Amazing!"
-//
-//        if messageLabel.text == message1 {
-//           messageLabel.text = message2
-//        } else if messageLabel.text == message2 {
-//           messageLabel.text = message3
-//        } else {
-//           messageLabel.text = message1
-//        }
+        let message1 = "You are Awesome!"
+        let message2 = "You are Great!"
+        let message3 = "You are Amazing!"
+
+        if messageLabel.text == message1 {
+           messageLabel.text = message2
+        } else if messageLabel.text == message2 {
+           messageLabel.text = message3
+        } else {
+           messageLabel.text = message1
+        }
    }
     
 }
