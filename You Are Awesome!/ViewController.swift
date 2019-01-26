@@ -21,42 +21,20 @@ class ViewController: UIViewController {
         print("The view loaded!")
 
     }
-    //linked button to code
-//    @IBAction func showAnotherMessage(_ sender: UIButton) {
-//        messageLabel.text = "You are Great!"
-//    }
+
     @IBAction func showMessagePressed(_ sender: UIButton) {
-//        messageLabel.text = "You are Amazing!"
+
         
-        let messages = ["You are Fantastic!!", "You are Great!", "You are Amazing"]
-        //set messageLabel text contents equal to the value defined by the index of the array messages
-        messageLabel.text = messages[index]
+        let messages = ["You are Fantastic!",
+                        "You are Great!",
+                        "You are Amazing!",
+                        "You are Fabulous!",
+                        "I can't wait to download your app!",
+                        "You are tremendous!"]
         
-        if index < messages.count-1 {
-            index += 1
-        } else if index == messages.count-1 {
-            index = 0
-        }
-        
-        
-//        if messageLabel.text == messages[0] {
-//            messageLabel.text = messages[1]
-//        } else if messageLabel.text == messages[1] {
-//            messageLabel.text = messages[2]
-//        } else {messageLabel.text = messages[0]
-//
-//        }
-//        let message1 = "You are Awesome!"
-//        let message2 = "You are Great!"
-//        let message3 = "You are Amazing!"
-//
-//        if messageLabel.text == message1 {
-//           messageLabel.text = message2
-//        } else if messageLabel.text == message2 {
-//           messageLabel.text = message3
-//        } else {
-//           messageLabel.text = message1
-//        }
+        messageLabel.text = messages[Int.random(in: 0..<messages.count)]
+        //or messageLabel.text = messages.randomElement()!
+
    }
     
 }
