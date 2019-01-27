@@ -12,8 +12,12 @@ class ViewController: UIViewController {
     
     //linked label to code
     @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var awesomeImageView: UIImageView!
+    
     // create index to exist outside of the function (we can remember value even as we forget function showMessagePressed
-    var index = 0
+    var index = -1
+    var imageIndex = -1
+    let numberOfImages = 10
     
     //Code below executes when the app view first loads
     override func viewDidLoad() {
@@ -40,6 +44,13 @@ class ViewController: UIViewController {
         
         index = newIndex
         messageLabel.text = messages[index]
+        
+        repeat {
+            newIndex = Int.random(in: 0..<numberOfImages)
+        } while imageIndex == newIndex
+        
+        imageIndex = newIndex
+        awesomeImageView.image = UIImage(named: "image\(imageIndex)")
     
 }
 
