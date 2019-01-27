@@ -32,16 +32,16 @@ class ViewController: UIViewController {
                         "I can't wait to download your app!",
                         "You are tremendous!"]
         
-        var newIndex = -1
+        // declare but do not initalize newIndex
+        var newIndex: Int
         repeat {
             newIndex = Int.random(in: 1..<messages.count)
         } while index == newIndex
         
         index = newIndex
         messageLabel.text = messages[index]
-        
-   }
     
 }
 
 
+}
