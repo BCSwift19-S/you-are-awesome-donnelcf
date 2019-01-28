@@ -13,9 +13,10 @@ class ViewController: UIViewController {
     
     //linked label to code
     @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var soundSwitch: UISwitch!
     @IBOutlet weak var awesomeImageView: UIImageView!
-    var awesomePlayer = AVAudioPlayer()
     
+    var awesomePlayer = AVAudioPlayer()
     // create index to exist outside of the function (we can remember value even as we forget function showMessagePressed
     var index = -1
     var imageIndex = -1
@@ -61,6 +62,12 @@ class ViewController: UIViewController {
         
     }
 
+    @IBAction func soundSwitchPressed(_ sender: UISwitch) {
+        if soundSwitch.isOn == false && soundIndex != -1 {
+                     awesomePlayer.stop()
+        }
+    }
+    
     @IBAction func showMessagePressed(_ sender: UIButton) {
 
         
@@ -79,12 +86,17 @@ class ViewController: UIViewController {
         imageIndex = nonRepeatingRandom(lastNumber: imageIndex, maxValue: numberOfImages)
         awesomeImageView.image = UIImage(named: "image\(imageIndex)")
         
-        
-        //play sound
-        soundIndex = nonRepeatingRandom(lastNumber: soundIndex, maxValue: numberOfSounds)
-        let soundName = "sound\(soundIndex)"
-        playSound(soundName: soundName, audioPlayer: &awesomePlayer)
+//        if soundSwitch.isOn == true
+        if soundSwitch.isOn {
+            //play sound
+            soundIndex = nonRepeatingRandom(lastNumber: soundIndex, maxValue: numberOfSounds)
+            
+            let soundName = "sound\(soundIndex)"
+            
+            playSound(soundName: soundName, audioPlayer: &awesomePlayer)
+        }
     }
+    
     
 
 
